@@ -1,0 +1,44 @@
+body {
+    background-color: #e8c5c5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px auto;
+    max-width: 700px;
+    border: double;
+    border-color: #000000;
+    margin-top: 250px;
+}
+
+article {
+    background-color: #f4e4e4;
+    display: block;
+    margin: 15px;
+    padding: 10px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff0000;
+    margin-left: 5px;
+}
+
+label.error {
+    display: inline;
+}
+
+.btn-black {
+    background-color: #0fa117;
+    color: #000000;
+    margin-left: 25%;
+}
+
+    .btn-black:hover {
+        color: #FFF;
+    }
