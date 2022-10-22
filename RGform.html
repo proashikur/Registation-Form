@@ -1,0 +1,68 @@
+<!--javascript validation-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        form label {
+            display: inline-block;
+            width: 100px;
+        }
+
+
+        form div {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function validate() {
+            if (document.getElementById('fname').value == "") {
+                alert("First name is required");
+                return true;
+            }
+            if (document.getElementById('lname').value == "") {
+                alert("Last name is required");
+                return true;
+            }
+            if (document.getElementById('email').value == "") {
+                alert("Email is required");
+                return true;
+            }
+            if (document.getElementById('phone').value == "") {
+                alert("Phone is required");
+                return true;
+            }
+            return true;
+        }
+    </script>
+
+</head>
+<body>
+    <form name="formValidation" id="formValidation" onsubmit="validate()">
+
+        <div>
+            <h1 align="center" style="color: red; font-size: 40px;">Registation form</h1>
+
+            <label>First Name:</label>
+            <input type="text" name="first name" placeholder="Enter Your First Name" id="fname"><br />
+
+            <label>Last Name:</label>
+            <input type="text" name=" lastname" placeholder="Enter Your last Name" id="lname"><br />
+            <label>Email:</label>
+            <input type="Email" name="email" placeholder="Enter Your email"><br />
+            <label>PhoneNumber:</label>
+            <input type="number" name="phone" placeholder="Enter Your Number"><br />
+            <label>Date Of Birth:</label>
+            <input type="Date" name="date" placeholder="Enter Your date of birth"><br />
+            <label>Gender:</label>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female<br />
+            <label>text area:</label>
+            <input type="text" name="first name" placeholder="Enter Your Message"><br />
+            <input type="submit" name="submit" value="submit">
+            <input type="Reset" name="Reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
